@@ -8,7 +8,7 @@
 	</head>
 
 <body>
-    <h2>第一題：詩</h2>
+    <h2>詩</h2>
     關&nbsp;&nbsp;關&nbsp;&nbsp;雎&nbsp;&nbsp;鳩<br>
     在&nbsp;&nbsp;河&nbsp;&nbsp;之&nbsp;&nbsp;洲<br>
     <!--註解此行-->
@@ -17,7 +17,7 @@
     <br>詩．周南．關睢
 <hr>
 
-<h2>第二題：小王子</h2>
+<h2>小王子</h2>
     <p>然後他又回到狐狸那裡。</p>
     <p>「再見了！」小王子說。</p>
     <p>「再見了！」狐狸說。</p>
@@ -25,7 +25,7 @@
     </blackquoteb>
     <p>小王子複述一遍：「真正的東西不是用眼睛可以看得到的。」</p>
 
-<h2>第三題：表格</h2>       
+<h2>表格</h2>       
 <table border="1">
   <tr>
     <th colspan="4">直轄市長辦公地址</th>
@@ -72,10 +72,42 @@
   </tr>     
   </table>
 
- <h2>第四題：圖</h2>       
+ <h2>圖</h2>       
     <a href="http://www.google.com/doodles/evidence-of-water-found-on-mars" 
     target="_new"> 
-    <img src="http://www.google.com/logos/doodles/2015/evidence-of-water-found-on-mars-5652760466817024.2-hp2x.gif" height=200 alt="在火星上發現水存在的證據"></a>
+    <img src="http://www.google.com/logos/doodles/2015/evidence-of-water-found-on-mars-5652760466817024.2-hp2x.gif" height=200 alt="在火星上發現水存在的證據">
+    </a>    
+ <hr>
+ 
+ 
+ 
+ <h2>亂數產生器</h2>  
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+ 
+ <p id='rec'></p>
+   <input type="button" onclick="launch()" value="啟動">
+
+   <style id="jsbin-css">
+ #rec{
+   border: 2px solid red;
+   height: 1em;
+   width: 6em;
+   padding: .5em;
+ }
+ input[type="button"]{
+   width: 3em;
+   font-size: 2em;
+ }
+   </style>    
+
+<script>
+ function launch(){
+   d3.select("#rec").text(random(1911,2016));
+ }
+ function random(n,m){
+   return Math.ceil(Math.random()*(m-n)+n);
+ }
+</script>
   
 </body>
 </html>
